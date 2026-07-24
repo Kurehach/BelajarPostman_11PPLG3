@@ -1,0 +1,8 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BelajarPostman_11PPLG3" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.BelajarPostman_11PPLG3" parent="Base.Theme.BelajarPostman_11PPLG3" />
+</resources>
