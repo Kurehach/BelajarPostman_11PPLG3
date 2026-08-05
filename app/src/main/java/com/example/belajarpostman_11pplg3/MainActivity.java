@@ -1,6 +1,7 @@
 package com.example.belajarpostman_11pplg3;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -107,6 +108,13 @@ public class MainActivity extends AppCompatActivity {
                     String message = jsonObject.getString("message");
 
                     Toast.makeText(MainActivity.this, "Hasil login: " + message, Toast.LENGTH_SHORT).show();
+
+                    // JIKA LOGIN BERHASIL -> PINDAH KE HomeActivity
+                    if (status) {
+                        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                        finish(); // Tutup Halaman Login
+                    }
 
                 } catch (Exception e) {
                     Toast.makeText(MainActivity.this, "Error: " + result, Toast.LENGTH_SHORT).show();
