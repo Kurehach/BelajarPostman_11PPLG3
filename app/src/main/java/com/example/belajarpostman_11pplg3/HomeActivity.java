@@ -34,7 +34,7 @@ public class HomeActivity extends AppCompatActivity {
         userAdapter = new UserAdapter(HomeActivity.this, listUser);
         rvdatauser.setLayoutManager(new LinearLayoutManager(this));
         rvdatauser.setAdapter(userAdapter);
-
+//getUsers
         getUsers();
     }
 
